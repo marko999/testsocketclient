@@ -1,0 +1,11 @@
+/home/marko/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient
+/home/marko/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.deps.json
+/home/marko/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.runtimeconfig.json
+/home/marko/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.runtimeconfig.dev.json
+/home/marko/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.dll
+/home/marko/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.pdb
+/home/marko/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.csprojAssemblyReference.cache
+/home/marko/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.AssemblyInfoInputs.cache
+/home/marko/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.AssemblyInfo.cs
+/home/marko/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.dll
+/home/marko/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.pdb
