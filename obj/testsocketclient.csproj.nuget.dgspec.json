@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/home/marko/testsocketclient/testsocketclient.csproj": {}
+    "/Users/markovucinic/repos/testsocketclient/testsocketclient.csproj": {}
   },
   "projects": {
-    "/home/marko/testsocketclient/testsocketclient.csproj": {
+    "/Users/markovucinic/repos/testsocketclient/testsocketclient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marko/testsocketclient/testsocketclient.csproj",
+        "projectUniqueName": "/Users/markovucinic/repos/testsocketclient/testsocketclient.csproj",
         "projectName": "testsocketclient",
-        "projectPath": "/home/marko/testsocketclient/testsocketclient.csproj",
-        "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/home/marko/testsocketclient/obj/",
+        "projectPath": "/Users/markovucinic/repos/testsocketclient/testsocketclient.csproj",
+        "packagesPath": "/Users/markovucinic/.nuget/packages/",
+        "outputPath": "/Users/markovucinic/repos/testsocketclient/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/Users/markovucinic/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -50,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     }
