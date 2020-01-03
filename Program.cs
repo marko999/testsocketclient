@@ -11,12 +11,12 @@ namespace testsocketclient
             new Thread(() => 
             {
                 Thread.CurrentThread.IsBackground = true; 
-                Connect("127.0.0.1", "Hello I'm Device 1...");
+                Connect("70.35.196.47", "Hello I'm Device 1...");
             }).Start();
             new Thread(() => 
             {
                 Thread.CurrentThread.IsBackground = true; 
-                Connect("127.0.0.1", "Hello I'm Device 2...");
+                Connect("70.35.196.47", "Hello I'm Device 2...");
             }).Start();
             Console.ReadLine();
         }

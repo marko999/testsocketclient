@@ -9,3 +9,14 @@
 /home/marko/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.AssemblyInfo.cs
 /home/marko/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.dll
 /home/marko/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.pdb
+/Users/markovucinic/repos/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient
+/Users/markovucinic/repos/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.deps.json
+/Users/markovucinic/repos/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.runtimeconfig.json
+/Users/markovucinic/repos/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.runtimeconfig.dev.json
+/Users/markovucinic/repos/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.dll
+/Users/markovucinic/repos/testsocketclient/bin/Debug/netcoreapp3.1/testsocketclient.pdb
+/Users/markovucinic/repos/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.csprojAssemblyReference.cache
+/Users/markovucinic/repos/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.AssemblyInfoInputs.cache
+/Users/markovucinic/repos/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.AssemblyInfo.cs
+/Users/markovucinic/repos/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.dll
+/Users/markovucinic/repos/testsocketclient/obj/Debug/netcoreapp3.1/testsocketclient.pdb
