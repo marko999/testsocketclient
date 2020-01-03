@@ -1,58 +1,54 @@
 ﻿using System;
+using System.Net;
 using System.Net.Sockets;
+using System.Text;
 using System.Threading;
 
 namespace testsocketclient
 {
     class Program
     {
+        private const string IpString = "127.000.000.001";
+        private const int Port = 8888;
+
         static void Main(string[] args)
         {
-            new Thread(() => 
-            {
-                Thread.CurrentThread.IsBackground = true; 
-                Connect("127.0.0.1", "Hello I'm Device 1...");
-            }).Start();
-            new Thread(() => 
-            {
-                Thread.CurrentThread.IsBackground = true; 
-                Connect("127.0.0.1", "Hello I'm Device 2...");
-            }).Start();
-            Console.ReadLine();
-        }
+            Console.Title = "Socket Client";
+            Console.Write("Enter the IP of the server: ");
+        
+            IPAddress clientIP = IPAddress.Parse(IpString);
+            String message = String.Empty;
 
-        private static void Connect(string server, string message)
-        {
-            try 
+            while (true)
             {
-                Int32 port = 8888;
-                TcpClient client = new TcpClient(server, port);
-                NetworkStream stream = client.GetStream();
-                int count = 0;
-                while (count++ < 3)
+                message = "alo pozega";
+
+                IPEndPoint clientEP = new IPEndPoint(clientIP, Port);
+
+                // Setup the socket
+                Socket clientSock = new Socket(
+                    AddressFamily.InterNetwork,
+                    SocketType.Stream,
+                    ProtocolType.Tcp);
+
+                // Attempt to establish a connection to the server
+                Console.Write("Establishing connection to the server... ");
+                try
                 {
-                    // Translate the Message into ASCII.
-                    Byte[] data = System.Text.Encoding.ASCII.GetBytes(message);   
-                    // Send the message to the connected TcpServer. 
-                    stream.Write(data, 0, data.Length);
-                    Console.WriteLine("Sent: {0}", message);         
-                    // Bytes Array to receive Server Response.
-                    data = new Byte[256];
-                    String response = String.Empty;
-                    // Read the Tcp Server Response Bytes.
-                    Int32 bytes = stream.Read(data, 0, data.Length);
-                    response = System.Text.Encoding.ASCII.GetString(data, 0, bytes);
-                    Console.WriteLine("Received: {0}", response);      
-                    Thread.Sleep(2000);   
+                    clientSock.Connect(clientEP);
+
+                    // Send the message
+                    clientSock.Send(Encoding.UTF8.GetBytes(message));
+                    clientSock.Shutdown(SocketShutdown.Both);
+                    clientSock.Close();
+                    Console.Write("Message sent successfully.\n\n");
                 }
-                stream.Close();         
-                client.Close();         
-            } 
-            catch (Exception e) 
-            {
-                Console.WriteLine("Exception: {0}", e);
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                
             }
-            Console.Read();
         }
     }
 }
